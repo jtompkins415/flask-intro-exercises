@@ -21,7 +21,7 @@ def do_sub():
     return result
 
 @app.route('/mult')
-def do_sub():
+def do_mult():
     a = int(request.args.get('a'))
     b = int(request.args.get('b'))
     result = mult(a,b)
@@ -29,7 +29,7 @@ def do_sub():
     return result
 
 @app.route('/div')
-def do_sub():
+def do_div():
     a = int(request.args.get('a'))
     b = int(request.args.get('b'))
     result = div(a,b)
