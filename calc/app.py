@@ -7,18 +7,18 @@ app = Flask(__name__)
 def do_add():
     a = int(request.args.get('a'))
     b = int(request.args.get('b'))
-    result = add(a,b)
+    total = add(a,b)
 
-    return result
+    return str(total)
 
 
 @app.route('/sub')
 def do_sub():
     a = int(request.args.get('a'))
     b = int(request.args.get('b'))
-    result = sub(a,b)
+    total = sub(a,b)
 
-    return result
+    return str(total)
 
 @app.route('/mult')
 def do_mult():
@@ -26,7 +26,7 @@ def do_mult():
     b = int(request.args.get('b'))
     result = mult(a,b)
 
-    return result
+    return str(result)
 
 @app.route('/div')
 def do_div():
@@ -34,4 +34,4 @@ def do_div():
     b = int(request.args.get('b'))
     result = div(a,b)
 
-    return result
+    return str(result)
